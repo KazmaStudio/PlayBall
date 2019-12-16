@@ -10,12 +10,12 @@
 		12CF06E923A6866E00FF57DD /* NavigationMainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CF06E823A6866E00FF57DD /* NavigationMainPageViewController.m */; };
 		12CF06EE23A6874A00FF57DD /* NavigationMinePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CF06ED23A6874A00FF57DD /* NavigationMinePageViewController.m */; };
 		12CF06F223A68CFC00FF57DD /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CF06F123A68CFC00FF57DD /* Constants.m */; };
-		12D0B6D323A54CFE00D785BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D0B6D223A54CFE00D785BB /* AppDelegate.m */; };
-		12D0B6D623A54CFE00D785BB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D0B6D523A54CFE00D785BB /* SceneDelegate.m */; };
+		12CF06F923A72BFE00FF57DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CF06F323A72BFD00FF57DD /* AppDelegate.m */; };
+		12CF06FB23A72BFE00FF57DD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CF06F723A72BFE00FF57DD /* SceneDelegate.m */; };
+		12CF06FC23A72BFE00FF57DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CF06F823A72BFE00FF57DD /* main.m */; };
 		12D0B6DC23A54CFE00D785BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D0B6DA23A54CFE00D785BB /* Main.storyboard */; };
 		12D0B6DE23A54D0000D785BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D0B6DD23A54D0000D785BB /* Assets.xcassets */; };
 		12D0B6E123A54D0000D785BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D0B6DF23A54D0000D785BB /* LaunchScreen.storyboard */; };
-		12D0B6E423A54D0000D785BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D0B6E323A54D0000D785BB /* main.m */; };
 		12D0B6EE23A54D0000D785BB /* PlayBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D0B6ED23A54D0000D785BB /* PlayBallTests.m */; };
 		12D0B6F923A54D0000D785BB /* PlayBallUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D0B6F823A54D0000D785BB /* PlayBallUITests.m */; };
 		12D0B71723A5C90F00D785BB /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D0B71623A5C90F00D785BB /* TabBar.storyboard */; };
@@ -49,16 +49,16 @@
 		12CF06ED23A6874A00FF57DD /* NavigationMinePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationMinePageViewController.m; sourceTree = "<group>"; };
 		12CF06F023A68CFC00FF57DD /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		12CF06F123A68CFC00FF57DD /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		12CF06F323A72BFD00FF57DD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PlayBall/Support/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		12CF06F423A72BFD00FF57DD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PlayBall/Support/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		12CF06F523A72BFD00FF57DD /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneDelegate.h; path = PlayBall/Support/SceneDelegate.h; sourceTree = SOURCE_ROOT; };
+		12CF06F623A72BFD00FF57DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PlayBall/Support/Info.plist; sourceTree = SOURCE_ROOT; };
+		12CF06F723A72BFE00FF57DD /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SceneDelegate.m; path = PlayBall/Support/SceneDelegate.m; sourceTree = SOURCE_ROOT; };
+		12CF06F823A72BFE00FF57DD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PlayBall/Support/main.m; sourceTree = SOURCE_ROOT; };
 		12D0B6CE23A54CFE00D785BB /* PlayBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		12D0B6D123A54CFE00D785BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
-		12D0B6D223A54CFE00D785BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
-		12D0B6D423A54CFE00D785BB /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SceneDelegate.h; path = ../SceneDelegate.h; sourceTree = "<group>"; };
-		12D0B6D523A54CFE00D785BB /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SceneDelegate.m; path = ../SceneDelegate.m; sourceTree = "<group>"; };
 		12D0B6DB23A54CFE00D785BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12D0B6DD23A54D0000D785BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12D0B6E023A54D0000D785BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		12D0B6E223A54D0000D785BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
-		12D0B6E323A54D0000D785BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
 		12D0B6E923A54D0000D785BB /* PlayBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D0B6ED23A54D0000D785BB /* PlayBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayBallTests.m; sourceTree = "<group>"; };
 		12D0B6EF23A54D0000D785BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -195,12 +195,12 @@
 		12D0B70823A54D2F00D785BB /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				12D0B6D123A54CFE00D785BB /* AppDelegate.h */,
-				12D0B6D223A54CFE00D785BB /* AppDelegate.m */,
-				12D0B6D423A54CFE00D785BB /* SceneDelegate.h */,
-				12D0B6D523A54CFE00D785BB /* SceneDelegate.m */,
-				12D0B6E223A54D0000D785BB /* Info.plist */,
-				12D0B6E323A54D0000D785BB /* main.m */,
+				12CF06F423A72BFD00FF57DD /* AppDelegate.h */,
+				12CF06F323A72BFD00FF57DD /* AppDelegate.m */,
+				12CF06F623A72BFD00FF57DD /* Info.plist */,
+				12CF06F823A72BFE00FF57DD /* main.m */,
+				12CF06F523A72BFD00FF57DD /* SceneDelegate.h */,
+				12CF06F723A72BFE00FF57DD /* SceneDelegate.m */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -403,13 +403,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12D0B6D323A54CFE00D785BB /* AppDelegate.m in Sources */,
-				12D0B6E423A54D0000D785BB /* main.m in Sources */,
+				12CF06F923A72BFE00FF57DD /* AppDelegate.m in Sources */,
 				12D0B72E23A5DE8900D785BB /* TabBarController.m in Sources */,
 				12CF06F223A68CFC00FF57DD /* Constants.m in Sources */,
 				12CF06EE23A6874A00FF57DD /* NavigationMinePageViewController.m in Sources */,
-				12D0B6D623A54CFE00D785BB /* SceneDelegate.m in Sources */,
+				12CF06FB23A72BFE00FF57DD /* SceneDelegate.m in Sources */,
 				12CF06E923A6866E00FF57DD /* NavigationMainPageViewController.m in Sources */,
+				12CF06FC23A72BFE00FF57DD /* main.m in Sources */,
 				12D0B72023A5D12300D785BB /* LaunchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +515,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -567,6 +568,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -581,7 +583,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6525DV2M7X;
-				INFOPLIST_FILE = PlayBall/Info.plist;
+				INFOPLIST_FILE = PlayBall/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,7 +600,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6525DV2M7X;
-				INFOPLIST_FILE = PlayBall/Info.plist;
+				INFOPLIST_FILE = PlayBall/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

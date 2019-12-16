@@ -19,10 +19,10 @@
     [super viewDidLoad];
     
     [self.viewControllers[0].tabBarItem setImage: [UIImage systemImageNamed: IMAGE_NAME_CAR_FILL]];
-    [self.viewControllers[0].tabBarItem setTitle: [[Constants shareInstance] getLocalizedWithName: LOCALIZED_TEXT_CODE_TABBAR_ITEM_MAIN]];
+    [self.viewControllers[0].tabBarItem setTitle: [[Constants shareInstance] getLocalizedWithCode: [NSNumber numberWithInt: LOCALIZED_TEXT_CODE_TABBAR_ITEM_MAIN]]];
         
     [self.viewControllers[1].tabBarItem setImage: [UIImage systemImageNamed: IMAGE_NAME_PERSON_CORP_SQUARE_FILL]];
-    [self.viewControllers[1].tabBarItem setTitle: [[Constants shareInstance] getLocalizedWithName: LOCALIZED_TEXT_CODE_TABBAR_ITEM_MINE]];
+    [self.viewControllers[1].tabBarItem setTitle: [[Constants shareInstance] getLocalizedWithCode: [NSNumber numberWithInt: LOCALIZED_TEXT_CODE_TABBAR_ITEM_MINE]]];
     // Do any additional setup after loading the view.
 }
 

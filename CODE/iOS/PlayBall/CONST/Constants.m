@@ -32,16 +32,6 @@ static Constants* _instance = nil;
     return [Constants shareInstance] ;
 }
 
-int LANGUAGE_CODE = -1;
-
-- (void)setLanguaCode: (int)languageCode{
-    LANGUAGE_CODE = languageCode;
-}
-
-- (int)getLanguaCode{
-    return LANGUAGE_CODE;
-}
-
 NSString *const SEGUE_SELECT_LANGUAGE = @"segueSelectLanguage";
 
 NSString *const IMAGE_NAME_CAR_FILL = @"car.fill";
@@ -60,13 +50,32 @@ int const LANGUAGE_CODE_EN = 2;
 int const LOCALIZED_TEXT_CODE_TABBAR_ITEM_MAIN = 0;
 int const LOCALIZED_TEXT_CODE_TABBAR_ITEM_MINE = 1;
 
-- (NSString *) getLocalizedWithName: (int) localizedTextCode{
+int const LAUNCH_COUNT_INIT = 3;
+int LAUNCH_COUNT = 3;
+
+- (void) initialApp{
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:USER_DEFAULT_KEY_LANGUAGE_CODE] ==  nil){
+        [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithInt:LANGUAGE_CODE_NIL] forKey:USER_DEFAULT_KEY_LANGUAGE_CODE];
+    }
+}
+
+NSString *const USER_DEFAULT_KEY_LANGUAGE_CODE =  @"languageCode";
+
+- (void)setLanguaCode: (NSNumber *)languageCode{
+    [[NSUserDefaults standardUserDefaults] setValue:languageCode forKey:@"languageCode"];
+}
+
+- (NSNumber *)getLanguaCode{
+    return [[NSUserDefaults standardUserDefaults] valueForKey:USER_DEFAULT_KEY_LANGUAGE_CODE];
+}
+
+- (NSString *) getLocalizedWithCode: (NSNumber *) localizedTextCode{
     
     NSString *localizedString = @"";
     
-    switch (localizedTextCode) {
+    switch (localizedTextCode.intValue) {
         case LOCALIZED_TEXT_CODE_TABBAR_ITEM_MAIN:
-            switch (LANGUAGE_CODE) {
+            switch ([self getLanguaCode].intValue) {
                 case LANGUAGE_CODE_SC:
                     localizedString = @"Play Ball !";
                     break;
@@ -86,7 +95,7 @@ int const LOCALIZED_TEXT_CODE_TABBAR_ITEM_MINE = 1;
             break;
             
         case LOCALIZED_TEXT_CODE_TABBAR_ITEM_MINE:
-            switch (LANGUAGE_CODE) {
+            switch ([self getLanguaCode].intValue) {
                 case LANGUAGE_CODE_SC:
                     localizedString = @"我的";
                     break;
